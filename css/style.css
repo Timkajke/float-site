@@ -1,3 +1,88 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    /* даёт возможность плавной прокрутки страницы */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url("../images/nature.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover; */
+
+    /* либо одним свойством всё делать, либо как выше - несколько свойств указывать */
+    background: url("../images/nature.jpg") no-repeat fixed top center/cover;
+}
+
+.container {
+    width: 80%;
+    margin:  auto;
+
+}
+
+.container > * {
+    background-color: white;
+    padding: 0.4em;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+    background-color: black;
+}
+
+/* visited - свойства посещённых гиперссылок */
+a:visited {
+    color: chartreuse;
+}
+/* active - свойства, применяемые при ЗАЖАТИИ на гиперссылки.
+    по умолчанию цвет гиперссылки - красный */
+a:active {
+    color:darkturquoise;
+}
+
+
+nav a {    
+    padding: 24px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+aside, .ads {
+    width: 20%;
+    float: left;
+}
+
+main {
+    width: 60%;
+    float: left;
+}
+
+.scroller {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    text-align: center;
+    line-height: 100px;
+}
+
+footer {
+    /* свойство позволяет избежать обтекания. а значение both указывает удаление обтекания справа и слева */
+    clear: both;
+}
