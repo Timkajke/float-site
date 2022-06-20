@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+    font-family: "My custom font";
+    src: url("../fonts/Kareta.ttf");
+}
+
 * {
     box-sizing: border-box;
+    font-family: Merriweather, My custom font, Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -20,10 +28,10 @@ body {
 
 .container {
     width: 80%;
-    margin:  auto;
+    margin: auto;
 }
 
-.container > * {
+.container>* {
     background-color: white;
     padding: 0.4em;
     border: 1px solid black;
@@ -42,23 +50,25 @@ a:hover {
 a:visited {
     color: chartreuse;
 }
+
 /* active - свойства, применяемые при ЗАЖАТИИ на гиперссылки.
     по умолчанию цвет гиперссылки - красный */
 a:active {
-    color:darkturquoise;
+    color: darkturquoise;
 }
 
-nav a {    
+nav a {
     padding: 24px;
     font-size: 22px;
     font-weight: bold;
 }
 
 header nav ul li {
-    display: inline;    
+    display: inline;
 }
 
-aside, .ads {
+aside,
+.ads {
     width: 20%;
     float: left;
 }
@@ -70,7 +80,7 @@ main {
 
 .scroller {
     position: fixed;
-    bottom: 12%;
+    bottom: 1%;
     left: 12%;
 }
 
@@ -87,5 +97,4 @@ footer {
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
