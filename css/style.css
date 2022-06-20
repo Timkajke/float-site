@@ -21,7 +21,6 @@ body {
 .container {
     width: 80%;
     margin:  auto;
-
 }
 
 .container > * {
@@ -49,7 +48,6 @@ a:active {
     color:darkturquoise;
 }
 
-
 nav a {    
     padding: 24px;
     font-size: 22px;
@@ -57,7 +55,7 @@ nav a {
 }
 
 header nav ul li {
-    display: inline;
+    display: inline;    
 }
 
 aside, .ads {
@@ -71,18 +69,23 @@ main {
 }
 
 .scroller {
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    background-color: cadetblue;
     position: fixed;
-    bottom: 10%;
-    left: 10%;
+    bottom: 12%;
+    left: 12%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    opacity: 0.55;
     text-align: center;
-    line-height: 100px;
 }
 
 footer {
     /* свойство позволяет избежать обтекания. а значение both указывает удаление обтекания справа и слева */
     clear: both;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
